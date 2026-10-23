@@ -1,5 +1,6 @@
 {
   "version": {
+    "license": "MIT",
     "release_notes": {
       "en-US": "Initial AMO release: hierarchical outline, timeline scrubber, split peek, return-to-spot, and built-in book dark mode for Project Gutenberg HTML texts."
     }
