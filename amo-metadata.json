@@ -1,6 +1,6 @@
 {
   "categories": {
-    "firefox": ["appearance", "other"]
+    "firefox": ["appearance"]
   },
   "summary": {
     "en-US": "Hierarchical outline and timeline scrubber for Project Gutenberg books — jump chapters fast, scrub the whole text, and read in built-in dark mode."
