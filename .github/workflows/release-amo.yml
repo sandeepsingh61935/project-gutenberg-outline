@@ -27,15 +27,16 @@ permissions:
 jobs:
   publish:
     name: Build & submit to AMO
-    runs-on: ubuntu-latest
+    # Pin 24.04 so the ubuntu-latest → 26 migration does not surprise us.
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
-          node-version: '20'
+          node-version: '24'
           cache: npm
 
       - name: Install
@@ -77,11 +78,12 @@ jobs:
           AMO_JWT_SECRET: ${{ secrets.AMO_JWT_SECRET }}
           AMO_CHANNEL: ${{ github.event.inputs.channel || vars.AMO_CHANNEL || 'listed' }}
           FIREFOX_EXTENSION_ID: ${{ vars.FIREFOX_EXTENSION_ID }}
+          # Keep waiting for AMO approval (listed review) up to 15 minutes.
           AMO_APPROVAL_TIMEOUT_MS: '900000'
         run: node scripts/submit-amo.mjs
 
       - name: Upload signed artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: amo-release-${{ github.ref_name }}
           path: artifacts/
