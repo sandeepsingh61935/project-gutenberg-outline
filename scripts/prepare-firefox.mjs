@@ -46,6 +46,15 @@ manifest.icons = {
   128: 'icons/icon-128.png',
 };
 
+manifest.action = {
+  default_icon: {
+    16: 'icons/icon-16.png',
+    32: 'icons/icon-32.png',
+    48: 'icons/icon-48.png',
+  },
+  default_title: 'Project Gutenberg Outline',
+};
+
 // Firefox ignores Chrome-only quirks; keep MV3 content_scripts as-is.
 writeFileSync(manifestPath, JSON.stringify(manifest, null, 2) + '\n');
 console.log(`Firefox package ready: ${outDir}`);

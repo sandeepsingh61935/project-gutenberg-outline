@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="112" fill="#18181b"/>
+  <!-- Left Page (Trapezoid / Open Book) -->
+  <polygon points="244,140 130,164 130,364 244,340" fill="none" stroke="#e4e4e7" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
+  <!-- Left page content hints -->
+  <line x1="156" y1="210" x2="220" y2="198" stroke="#52525b" stroke-width="8" stroke-linecap="round"/>
+  <line x1="156" y1="255" x2="220" y2="243" stroke="#52525b" stroke-width="8" stroke-linecap="round"/>
+  <line x1="156" y1="300" x2="200" y2="291" stroke="#52525b" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Right Page (Trapezoid) -->
+  <polygon points="268,140 382,164 382,364 268,340" fill="none" stroke="#e4e4e7" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- Vertical Tick-Rail Cutting Through Right Page -->
+  <line x1="334" y1="180" x2="334" y2="334" stroke="#3f3f46" stroke-width="8" stroke-linecap="round"/>
+  <line x1="334" y1="200" x2="362" y2="200" stroke="#71717a" stroke-width="8" stroke-linecap="round"/>
+  <line x1="306" y1="240" x2="362" y2="240" stroke="#60a5fa" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="334" cy="240" r="8" fill="#60a5fa"/>
+  <line x1="334" y1="280" x2="356" y2="280" stroke="#71717a" stroke-width="8" stroke-linecap="round"/>
+  <line x1="316" y1="314" x2="362" y2="314" stroke="#71717a" stroke-width="8" stroke-linecap="round"/>
+</svg>

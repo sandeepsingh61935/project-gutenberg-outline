@@ -1,12 +1,10 @@
 name: Release · Firefox AMO
 
-# Publishes to addons.mozilla.org when you push a version tag: v1.0.1
-# Secrets (repo → Settings → Secrets and variables → Actions):
-#   AMO_JWT_ISSUER  — API key (JWT issuer)
-#   AMO_JWT_SECRET  — API secret (JWT secret)
-# Optional repo variable:
-#   FIREFOX_EXTENSION_ID — defaults to project-gutenberg-outline@sandeepsingh61935.github.io
-#   AMO_CHANNEL          — listed (default) | unlisted
+# Submits a NEW VERSION to the existing AMO listing when you push tag v*.
+# Add-on is already published — never change gecko id after first list.
+# Secrets: AMO_JWT_ISSUER, AMO_JWT_SECRET
+# Optional vars: FIREFOX_EXTENSION_ID (must stay project-gutenberg-outline@sandeepsingh61935.github.io),
+#                AMO_CHANNEL (listed default | unlisted)
 
 on:
   push:

@@ -82,6 +82,7 @@ async function zipSources(outPath) {
     'src',
     'icons',
     'scripts',
+    'store',
     'amo-metadata.json',
     'README.md',
   ].filter((p) => existsSync(join(root, p)));
