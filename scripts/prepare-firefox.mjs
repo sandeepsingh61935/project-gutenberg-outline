@@ -31,10 +31,13 @@ const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'));
 manifest.browser_specific_settings = {
   gecko: {
     id: process.env.FIREFOX_EXTENSION_ID || 'project-gutenberg-outline@sandeepsingh61935.github.io',
-    strict_min_version: '109.0',
+    strict_min_version: '140.0',
     data_collection_permissions: {
       required: ['none'],
     },
+  },
+  gecko_android: {
+    strict_min_version: '142.0',
   },
 };
 

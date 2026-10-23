@@ -17,7 +17,7 @@ export function parseDocumentOutline(): OutlineNode[] {
   for (let i = 0; i < elements.length; i++) {
     const el = elements[i];
     const tag = el.tagName.toLowerCase();
-    const rawText = decodeEntities(el.innerText || '');
+    const rawText = el.innerText || '';
     const text = rawText.replace(/\s+/g, ' ').trim();
 
     if (tag === 'p' && text) {
@@ -158,12 +158,6 @@ function ensureId(el: HTMLElement, idx: number): string {
   }
   el.id = `pg-node-${idx}`;
   return el.id;
-}
-
-function decodeEntities(raw: string): string {
-  const txt = document.createElement('textarea');
-  txt.innerHTML = raw;
-  return txt.value;
 }
 
 function truncateWords(text: string, maxWords: number): string {
