@@ -1,0 +1,29 @@
+name: Update AMO listing
+
+# Pushes plain-text description + store/screenshots to the live AMO product page.
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'store/screenshots/**'
+      - 'store/amo-listing.json'
+      - 'amo-metadata.json'
+      - 'scripts/update-amo-listing.mjs'
+    branches: [main]
+
+jobs:
+  update:
+    name: Patch listing + upload screenshots
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '24'
+
+      - name: Update AMO product page
+        env:
+          AMO_JWT_ISSUER: ${{ secrets.AMO_JWT_ISSUER }}
+          AMO_JWT_SECRET: ${{ secrets.AMO_JWT_SECRET }}
+        run: node scripts/update-amo-listing.mjs
