@@ -56,12 +56,14 @@ https://github.com/sandeepsingh61935/project-gutenberg-outline
 
 ## Screenshots (upload order)
 
+Real captures from [Thus Spake Zarathustra](https://www.gutenberg.org/cache/epub/1998/pg1998-images.html) (`npm run screenshots`).
+
 | File | Caption |
 | --- | --- |
-| `01-timeline-scrubber.png` | Right-edge timeline — hover for preview, wheel to step, click to jump |
-| `02-outline-drawer.png` | Outline drawer with search, dark-mode toggle, and chapter tree |
-| `03-reading-dark-mode.png` | Built-in book dark mode (D or ☾) vs default light page |
-| `04-feature-overview.png` | Icon and feature overview |
+| `01-timeline-scrubber.png` | Timeline scrubber on a live Gutenberg book — hover ticks for section previews |
+| `02-outline-drawer.png` | Outline drawer with hierarchical chapters and subsections |
+| `03-reading-dark-mode.png` | Built-in book dark mode while reading |
+| `04-feature-overview.png` | Search/filter the outline (e.g. “zarathustra”) |
 
 ## How to fix the live listing right now
 

@@ -12,3 +12,6 @@ web-ext-artifacts/
 .env
 .env.*
 graphify-out/
+.playwright-ext-profile/
+.playwright-ext-profile2/
+store/screenshots/debug-*.png
