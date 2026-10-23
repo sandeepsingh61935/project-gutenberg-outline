@@ -1,4 +1,13 @@
 {
+  "categories": {
+    "firefox": ["appearance", "other"]
+  },
+  "summary": {
+    "en-US": "Hierarchical outline and timeline scrubber for Project Gutenberg books — jump chapters fast, scrub the whole text, and read in built-in dark mode."
+  },
+  "description": {
+    "en-US": "<p><strong>Project Gutenberg Outline</strong> turns long Gutenberg HTML books into something you can actually navigate.</p><p>When you open a book on <em>gutenberg.org</em>, the extension builds a structured outline and a right-edge timeline so you can move by chapter, subsection, or scroll position.</p><h3>Features</h3><ul><li><strong>Hierarchical outline</strong> — parts, chapters, and subsections.</li><li><strong>Timeline scrubber</strong> — right-edge ticks with previews; wheel to step, click to jump.</li><li><strong>Split peek</strong> — Shift+click to read in place.</li><li><strong>Return to reading spot</strong> — Alt+Left after outline jumps.</li><li><strong>Built-in book dark mode</strong> — toggle with ☾ or D; preference saved.</li></ul><h3>Privacy</h3><ul><li>Runs only on Project Gutenberg book HTML pages.</li><li>Permission: storage (dark-mode preference only).</li><li>No accounts, analytics, or remote code.</li></ul>"
+  },
   "version": {
     "license": "MIT",
     "release_notes": {
