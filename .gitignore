@@ -1,0 +1,14 @@
+node_modules/
+dist/
+dist-firefox/
+artifacts/
+src/**/*.js
+web-ext-artifacts/
+*.xpi
+*.zip
+!package-lock.json
+.DS_Store
+*.log
+.env
+.env.*
+graphify-out/

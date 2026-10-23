@@ -1,0 +1,24 @@
+{
+  "name": "project-gutenberg-outline",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Hierarchical outline and timeline scrubber for Project Gutenberg",
+  "scripts": {
+    "dev": "vite",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc && vite build",
+    "build:firefox": "npm run build && node scripts/prepare-firefox.mjs",
+    "lint:ext": "npm run build:firefox && web-ext lint --source-dir dist-firefox",
+    "pack:firefox": "npm run build:firefox && web-ext build --source-dir dist-firefox --artifacts-dir artifacts --overwrite-dest",
+    "submit:amo": "npm run build:firefox && node scripts/submit-amo.mjs",
+    "ci": "npm run typecheck && npm run lint:ext && npm run pack:firefox"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^2.0.0-beta.25",
+    "@types/chrome": "^0.0.268",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11",
+    "web-ext": "^8.4.0"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "version": {
+    "release_notes": {
+      "en-US": "Initial AMO release: hierarchical outline, timeline scrubber, and built-in book dark mode for Project Gutenberg texts."
+    }
+  }
+}
